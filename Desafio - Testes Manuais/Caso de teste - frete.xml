@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10001</projectId>
+    <projectKey>SWDIO</projectKey>
+    <exportDate>2023-01-06 12:09:51 UTC</exportDate>
+    <folders>
+        <folder fullPath="Frete" index="0"/>
+    </folders>
+    <testCases>
+        <testCase id="77725841" key="SWDIO-T1">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Stephanie Souza</createdBy>
+            <createdOn>2023-01-05 14:46:23 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Frete]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Cliente com login deseja verificar o frete uma compra]]></name>
+            <objective><![CDATA[Verificar condi&ccedil;&atilde;o de frete da compra.]]></objective>
+            <owner>70121:8e948f6e-11b4-4fb5-b056-94a4c384de6f</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Approved]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given que o cliente esteja na tela do produto que deseja;
+And não esteja no “carrinho de compras”;
+When digitar o CEP e clicar “calcule o frete e prazo de entrega”;
+Then aparecerá o valor do frete e a estimativa do dia da entrega.]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="77726061" key="SWDIO-T2">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Stephanie Souza</createdBy>
+            <createdOn>2023-01-05 14:54:00 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Frete]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Cliente sem login deseja verificar o frete uma compra]]></name>
+            <objective><![CDATA[Verificar o frete da compra.]]></objective>
+            <owner>70121:8e948f6e-11b4-4fb5-b056-94a4c384de6f</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Approved]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Given que o cliente esteja na tela do produto que deseja;
+And não esteja no “carrinho de compras”;
+When clicar clicar “calcule o frete e prazo de entrega”;
+Then aparecerá o valor do frete e a estimativa do dia da entrega.]]></details>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>

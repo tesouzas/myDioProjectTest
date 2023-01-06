@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10001</projectId>
+    <projectKey>SWDIO</projectKey>
+    <exportDate>2023-01-06 12:08:40 UTC</exportDate>
+    <folders>
+        <folder fullPath="Compra" index="1"/>
+    </folders>
+    <testCases>
+        <testCase id="77769168" key="SWDIO-T3">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Stephanie Souza</createdBy>
+            <createdOn>2023-01-06 11:12:16 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Compra]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Usuário com login efetua compra no carrinho]]></name>
+            <owner>70121:8e948f6e-11b4-4fb5-b056-94a4c384de6f</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio digita a url do site]]></description>
+                        <expectedResult><![CDATA[Usu&aacute;rio &eacute; redirecionado para a p&aacute;gina do site]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio efetua o login no site]]></description>
+                        <expectedResult><![CDATA[Usu&aacute;rio apare&ccedil;a como logado]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio visualiza o produto desejado]]></description>
+                        <expectedResult><![CDATA[Usu&aacute;rio consiga verificar os detalhes do produto]]></expectedResult>
+                        <testData><![CDATA[]]></testData>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio clica no bot&atilde;o comprar]]></description>
+                        <expectedResult><![CDATA[O produto &eacute; adicionado ao carrinho de compras]]></expectedResult>
+                    </step>
+                    <step index="4">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio clica no bot&atilde;o do carrinho de compras]]></description>
+                        <expectedResult><![CDATA[Usu&aacute;rio &eacute; redirecionado para a p&aacute;gina de finaliza&ccedil;&atilde;o da compra]]></expectedResult>
+                    </step>
+                    <step index="5">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio clica no bot&atilde;o finalizar compra]]></description>
+                        <expectedResult><![CDATA[Compra &eacute; finalizada com sucesso.]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="77769189" key="SWDIO-T4">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Stephanie Souza</createdBy>
+            <createdOn>2023-01-06 11:13:03 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[Compra]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Usuário sem login efetua compra no site]]></name>
+            <owner>70121:8e948f6e-11b4-4fb5-b056-94a4c384de6f</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio digita a url do site]]></description>
+                        <expectedResult><![CDATA[Usu&aacute;rio &eacute; redirecionado para o site da loja]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio escolhe o produto e clica para visualizar]]></description>
+                        <expectedResult><![CDATA[Usu&aacute;rio visualiza o produto desejado]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio clica no bot&atilde;o comprar]]></description>
+                        <expectedResult><![CDATA[O produto &eacute; adicionado no carrinho de compra]]></expectedResult>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio clica no carrinho de compras]]></description>
+                        <expectedResult><![CDATA[Usu&aacute;rio &eacute; redirecionado para a p&aacute;gina do carrinho de compras]]></expectedResult>
+                    </step>
+                    <step index="4">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio clica em finalizar compra]]></description>
+                        <expectedResult><![CDATA[Compra &eacute; finalizada]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
